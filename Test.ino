@@ -35,6 +35,18 @@ void loop() {
    if(incomingByte=="d"){
      digitalWrite(4, HIGH);
    }
+     if(incomingByte=="Tokyo_Drift_Left"){
+     digitalWrite(4, HIGH);
+     //Front Wheel Stop
+     //Increase Power
+     //Left Turn Power
+   }
+   if(incomingByte=="Tokyo_Drift_Right"){
+     digitalWrite(3, HIGH);
+     //Front Wheel Stop
+     //Increase Power
+     //Right Turn Power
+   }
    Serial.println(incomingByte);
  }
 }
